@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Baja tu factura de luz · Guía práctica en 8 pasos</title>
+<meta name="description" content="Lo que tu compañía eléctrica no te cuenta. Aplica los 8 pasos y tu factura de luz baja. Si no baja, te devuelvo el dinero. Ebook en PDF por 16,90 €.">
+<meta name="theme-color" content="#0B1D33">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Baja tu factura de luz: lo que tu compañía eléctrica no te cuenta">
+<meta property="og:description" content="Guía práctica en 8 pasos. Ebook en PDF, acceso inmediato y garantía de 7 días.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' fill='%230B1D33'/%3E%3Cpath d='M13.5 1 3 14h7.5L9 23 21 9h-7.5l1-8z' fill='%23FFD400'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;600;700;800&display=swap">
+<style>
+:root{
+  --navy:#0B1D33; --navy-h:#13304F;
+  --yellow:#FFD400; --yellow-h:#FFE14D;
+  --orange:#FF6B00; --sand:#F4F3EE; --photo:#C9B9A0;
+  --fh:'Archivo Black',sans-serif; --fb:Archivo,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--navy);font:400 16px/1.5 var(--fb)}
+h1,h2,h3,p{margin:0}
+ul,ol{list-style:none;margin:0;padding:0}
+img{display:block;max-width:100%}
+a{color:var(--navy)}
+a:hover{color:var(--orange)}
+.in{max-width:640px;margin-inline:auto}
+.h2{font:400 30px/1.05 var(--fh);text-transform:uppercase}
+.hl{color:var(--yellow)}
+.d-only{display:none}
+.ico{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+/* Botões */
+.btn{display:flex;align-items:center;justify-content:center;text-align:center;background:var(--yellow);color:var(--navy);font:800 18px/1.2 var(--fb);padding:20px 18px;border-radius:999px;text-decoration:none;transition:background-color .15s}
+.btn:hover{background:var(--yellow-h);color:var(--navy)}
+.btn--line{border:2px solid var(--navy)}
+.btn--dark{background:var(--navy);color:var(--yellow)}
+.btn--dark:hover{background:var(--navy-h);color:var(--yellow)}
+.btn:focus-visible,.faq-q:focus-visible,.foot-links a:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+
+/* Hero */
+.hero{background:var(--navy);color:#fff;padding:28px 22px 36px;overflow:hidden}
+.hero .in{display:grid;grid-template-areas:"text" "book" "cta"}
+.hero-text{grid-area:text}
+.tag{display:inline-block;background:var(--yellow);color:var(--navy);font:800 11px/1 var(--fb);letter-spacing:.14em;padding:7px 9px}
+.hero h1{margin-top:18px;font:400 34px/1.02 var(--fh);letter-spacing:-.01em}
+.hero-lead{margin-top:14px;font:600 18px/1.4 var(--fb)}
+.hero-book{grid-area:book;display:flex;justify-content:center;margin:28px 0 26px;position:relative}
+.hero-cta{grid-area:cta}
+.trust{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 14px;margin-top:14px;font:700 12px/1 var(--fb);letter-spacing:.06em}
+.trust .dot{color:var(--yellow)}
+.bg-bolt{display:none}
+
+/* Capa do ebook (escala com --u) */
+.book{--u:1px;width:calc(220*var(--u));height:calc(311*var(--u));background:var(--navy);box-shadow:0 calc(22*var(--u)) calc(44*var(--u)) rgba(0,0,0,.6);transform:rotate(-4deg);padding:calc(18*var(--u)) calc(16*var(--u));display:flex;flex-direction:column;position:relative;overflow:hidden;border:calc(2*var(--u)) solid var(--yellow)}
+.book-title{font:400 calc(32*var(--u))/.9 var(--fh);color:var(--yellow)}
+.book-sub{font:600 calc(11*var(--u))/1.2 var(--fb);color:#fff;margin-top:calc(8*var(--u))}
+.book-bolt{position:absolute;right:calc(-8*var(--u));top:calc(112*var(--u));width:calc(104*var(--u));height:calc(124*var(--u));fill:var(--yellow)}
+.book-band{margin-top:auto;background:var(--yellow);color:var(--navy);font:800 calc(10*var(--u))/1.25 var(--fb);padding:calc(7*var(--u));position:relative}
+.book-author{font:400 calc(10*var(--u))/1 var(--fh);color:#fff;margin-top:calc(7*var(--u))}
+
+/* ¿Te suena? */
+.pain{padding:44px 22px}
+.pain .in{display:grid;grid-template-areas:"title" "items" "close"}
+.pain .h2{grid-area:title;margin-bottom:20px}
+.pain-list{grid-area:items;display:flex;flex-direction:column;gap:10px}
+.pain-item{display:flex;gap:14px;align-items:center;background:var(--sand);padding:16px;font-weight:700}
+.pain-item .ico{width:28px;height:28px;color:var(--orange);stroke-width:2.2}
+.pain-close{grid-area:close;margin-top:20px;font:700 18px/1.4 var(--fb)}
+
+/* Quem sou */
+.about{background:var(--yellow);padding:44px 22px}
+.photo{aspect-ratio:4/5;border:3px solid var(--navy);background:var(--photo);overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:50% 12%}
+.eyebrow{font:800 13px/1 var(--fb);letter-spacing:.16em}
+.about h2{margin:22px 0 12px;font:400 28px/1.08 var(--fh)}
+.about p+p{margin-top:12px}
+
+/* Lo que hay dentro */
+.inside{padding:44px 22px}
+.inside-head p{margin:8px 0 20px}
+.chapters{display:flex;flex-direction:column;gap:8px}
+.ch{display:grid;grid-template-columns:44px 1fr;grid-template-areas:"icon num" "icon title";column-gap:12px;align-items:center;align-content:center;border:2px solid var(--navy);padding:12px 14px}
+.ch .ico{grid-area:icon;width:34px;height:34px}
+.ch-num{grid-area:num;font:400 13px/1.4 var(--fh);color:var(--orange)}
+.ch-title{grid-area:title;font-weight:800}
+.ch--last{background:var(--yellow)}
+.ch--last .ch-num{color:var(--navy)}
+.ch--last .ico{stroke-width:2.4}
+.inside-cta{margin-top:24px}
+
+/* Para ti / No es para ti */
+.fit{padding:0 22px 44px}
+.fit .in{display:grid;gap:10px}
+.fit-yes{background:var(--navy);color:#fff;padding:20px}
+.fit-no{border:3px solid var(--orange);padding:18px}
+.fit-title{font:400 20px/1.1 var(--fh);margin-bottom:12px}
+.fit-yes .fit-title{color:var(--yellow)}
+.fit-list{display:flex;flex-direction:column;gap:8px}
+
+/* Garantia */
+.guar{background:var(--navy);color:#fff;padding:48px 22px;text-align:center}
+.seal{margin:0 auto;width:220px;height:220px;border-radius:50%;background:var(--orange);display:flex;align-items:center;justify-content:center;transform:rotate(-8deg)}
+.seal-in{width:190px;height:190px;border-radius:50%;border:4px dashed var(--navy);display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--navy)}
+.seal-l{font:800 13px/1 var(--fb);letter-spacing:.16em;margin-right:-.16em}
+.seal-n{font:400 50px/1 var(--fh);margin:6px 0}
+.guar-head{margin-top:26px;font:400 24px/1.15 var(--fh)}
+.guar-sub{margin-top:12px;font:600 17px/1.4 var(--fb)}
+
+/* Oferta */
+.offer{padding:44px 22px}
+.offer-box{border:3px solid var(--navy);display:grid}
+.offer-price{background:var(--yellow);padding:20px;text-align:center;border-bottom:3px solid var(--navy)}
+.offer-eyebrow{font:800 12px/1 var(--fb);letter-spacing:.16em}
+.offer-amount{font:400 56px/1 var(--fh);margin-top:10px;white-space:nowrap}
+.offer-note{font-size:13px;font-weight:700;margin-top:4px}
+.offer-list{padding:20px 20px 0;display:flex;flex-direction:column;gap:10px}
+.offer-list li{display:flex;gap:10px}
+.offer-list b{color:var(--orange)}
+.offer-cta{margin:20px}
+
+/* FAQ */
+.faq{padding:0 22px 44px}
+.faq .h2{font-size:28px;margin-bottom:16px}
+.faq-list{border-top:2px solid var(--navy)}
+.faq-item{border-bottom:1px solid var(--navy)}
+.faq-q{display:flex;justify-content:space-between;gap:12px;width:100%;padding:16px 0;background:none;border:0;color:inherit;font:800 16px/1.5 var(--fb);text-align:left;cursor:pointer}
+.faq-sign{font:400 20px/1 var(--fh);flex:none}
+.faq-sign::before{content:"+"}
+.faq-item.open .faq-sign::before{content:"\2212"}
+.faq-a{display:none;margin:0 0 16px;max-width:680px}
+.faq-item.open .faq-a{display:block}
+
+/* CTA final + rodapé */
+.final{background:var(--yellow);padding:44px 22px;text-align:center}
+.final .btn{margin-top:22px}
+.foot{background:var(--navy);color:#fff;padding:26px 22px;font-size:13px}
+.foot-brand{font:400 16px/1 var(--fh);color:var(--yellow)}
+.foot-links{display:flex;gap:18px;margin-top:14px;font-weight:700}
+.foot-links a{color:#fff}
+.foot-links a:hover{color:var(--yellow)}
+
+/* ===== Desktop ===== */
+@media (min-width:1024px){
+  body{font-size:18px}
+  .in{max-width:1160px}
+  .h2{font-size:clamp(40px,3.6vw,52px);line-height:1}
+  .d-only{display:block}
+  span.d-only{display:inline}
+  .m-only{display:none}
+  .btn{display:inline-flex;font-size:22px;padding:24px 40px}
+
+  .hero{padding:90px 40px}
+  .hero .in{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);grid-template-areas:"text book" "cta book";column-gap:60px;align-items:center}
+  .hero-text{align-self:end}
+  .hero-cta{align-self:start;margin-top:36px}
+  .tag{font-size:13px;letter-spacing:.16em;padding:9px 12px}
+  .hero h1{margin-top:26px;font-size:clamp(48px,4.6vw,66px);line-height:1;letter-spacing:-.015em}
+  .hero-lead{margin-top:24px;font-size:23px;max-width:600px}
+  .hero-book{margin:0}
+  .book{--u:1.545px}
+  .bg-bolt{display:block;position:absolute;right:-60px;top:-60px;width:300px;height:420px;fill:var(--yellow);opacity:.16}
+  .trust{justify-content:flex-start;gap:16px;margin-top:18px;font-size:13px;letter-spacing:.08em}
+
+  .pain{padding:100px 40px}
+  .pain .in{grid-template-columns:minmax(0,380px) minmax(0,1fr);grid-template-rows:auto 1fr;grid-template-areas:"title items" "close items";column-gap:60px;align-items:start}
+  .pain .h2{margin-bottom:0}
+  .pain-close{font-size:22px}
+  .pain-list{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .pain-item{flex-direction:column;align-items:flex-start;gap:14px;padding:26px;font-size:20px}
+  .pain-item .ico{width:36px;height:36px}
+
+  .about{padding:100px 40px}
+  .about .in{display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:70px;align-items:center}
+  .photo{border-width:4px}
+  .about h2{margin:18px 0 22px;font-size:clamp(36px,3.33vw,48px);line-height:1.05}
+  .about p{font-size:20px}
+  .about p+p{margin-top:14px}
+
+  .inside{padding:100px 40px}
+  .inside-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:36px}
+  .inside-head p{margin:0;font-size:20px;font-weight:600}
+  .chapters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+  .ch{grid-template-columns:1fr auto;grid-template-areas:"icon num" "title title";row-gap:14px;column-gap:0;padding:24px;align-content:start}
+  .ch .ico{width:38px;height:38px}
+  .ch-num{font-size:28px;line-height:1}
+  .ch-title{font-size:19px;line-height:1.3;align-self:start}
+  .inside-cta{display:flex;justify-content:center;margin-top:40px}
+
+  .fit{padding:0 40px 100px}
+  .fit .in{grid-template-columns:1fr 1fr;gap:20px}
+  .fit-yes{padding:40px}
+  .fit-no{border-width:4px;padding:36px}
+  .fit-title{font-size:28px;margin-bottom:20px}
+  .fit-list{gap:12px;font-size:19px}
+
+  .guar{padding:100px 40px;text-align:left}
+  .guar .in{display:grid;grid-template-columns:340px minmax(0,1fr);gap:80px;align-items:center}
+  .seal{width:340px;height:340px;margin:0}
+  .seal-in{width:296px;height:296px;border-width:5px}
+  .seal-l{font-size:18px}
+  .seal-n{font-size:96px;margin:8px 0}
+  .guar-head{margin-top:0;font-size:clamp(34px,3.2vw,46px);line-height:1.08}
+  .guar-sub{margin-top:22px;font-size:24px}
+
+  .offer{padding:100px 40px}
+  .offer .in{display:flex;justify-content:center}
+  .offer-box{width:700px;max-width:100%;border-width:4px;grid-template-columns:290px 1fr}
+  .offer-price{padding:34px 24px;border-bottom:0;border-right:4px solid var(--navy);display:flex;flex-direction:column;justify-content:center;align-items:center}
+  .offer-eyebrow{font-size:13px}
+  .offer-amount{font-size:58px;margin-top:14px}
+  .offer-note{font-size:14px;margin-top:6px}
+  .offer-list{padding:32px;gap:12px}
+  .offer-cta{display:flex;grid-column:1/-1;margin:0;border:0;border-top:4px solid var(--navy);border-radius:0;padding:26px}
+
+  .faq{padding:0 40px 100px}
+  .faq .in{display:grid;grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:60px;align-items:start}
+  .faq .h2{margin:0;font-size:clamp(36px,3.2vw,46px);line-height:1.02}
+  .faq-q{gap:16px;padding:22px 0;font-size:20px}
+  .faq-sign{font-size:24px}
+  .faq-a{margin:0 0 22px}
+
+  .final{padding:90px 40px;text-align:left}
+  .final .in{display:flex;justify-content:space-between;align-items:center;gap:40px}
+  .final .h2{max-width:640px}
+  .final .btn{margin-top:0;flex:none}
+
+  .foot{padding:34px 40px;font-size:14px}
+  .foot .in{display:flex;justify-content:space-between;align-items:center}
+  .foot-brand{font-size:18px}
+  .foot-links{margin-top:0;gap:28px}
+}
+</style>
+</head>
+<body>
+
+<!-- Ícones -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-euro" viewBox="0 0 24 24"><path d="M18 6a7 7 0 1 0 0 12M4 10h10M4 14h10"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="1"/><path d="M9 7h6M9 11h6M9 15h3"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></symbol>
+  <symbol id="i-plug" viewBox="0 0 24 24"><path d="M9 2v6M15 2v6M6 8h12v4a6 6 0 0 1-12 0V8zM12 18v4"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 10 12 3l9 7v11H3V10zM9 21v-6h6v6"/></symbol>
+  <symbol id="i-swap" viewBox="0 0 24 24"><path d="M7 4 3 8l4 4M3 8h14M17 20l4-4-4-4M21 16H7"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></symbol>
+  <symbol id="i-bolt-fill" viewBox="0 0 24 24"><path d="M13.5 1 3 14h7.5L9 23 21 9h-7.5l1-8z"/></symbol>
+</svg>
+
+<header class="hero">
+  <div class="in">
+    <div class="hero-text">
+      <span class="tag">GUÍA PRÁCTICA · 8 PASOS</span>
+      <h1>Baja tu factura de luz: <span class="hl">lo que tu compañía eléctrica no te cuenta</span></h1>
+      <p class="hero-lead">Aplica los 8 pasos y tu factura baja. Si no baja, te devuelvo el dinero.</p>
+    </div>
+    <div class="hero-book">
+      <svg class="bg-bolt" aria-hidden="true"><use href="#i-bolt-fill"/></svg>
+      <div class="book" role="img" aria-label="Portada del ebook Baja tu factura, de José Juan">
+        <div class="book-title">BAJA TU<br>FACTURA</div>
+        <div class="book-sub">Lo que tu compañía eléctrica no te cuenta</div>
+        <svg class="book-bolt" aria-hidden="true"><use href="#i-bolt-fill"/></svg>
+        <div class="book-band">Aplica los 8 pasos y tu factura de luz baja.</div>
+        <div class="book-author">JOSÉ JUAN</div>
+      </div>
+    </div>
+    <div class="hero-cta">
+      <a class="btn" href="#oferta">Quiero bajar mi factura · 16,90&nbsp;€</a>
+      <div class="trust"><span>PDF</span><span class="dot">·</span><span>ACCESO INMEDIATO</span><span class="dot">·</span><span>GARANTÍA<span class="d-only"> DE 7 DÍAS</span></span></div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="pain">
+  <div class="in">
+    <h2 class="h2">¿Te suena?</h2>
+    <ul class="pain-list">
+      <li class="pain-item"><svg class="ico" aria-hidden="true"><use href="#i-euro"/></svg>Cada mes pagas más y no sabes por qué.</li>
+      <li class="pain-item"><svg class="ico" aria-hidden="true"><use href="#i-doc"/></svg>Abres la factura y no entiendes nada.</li>
+      <li class="pain-item"><svg class="ico" aria-hidden="true"><use href="#i-bulb"/></svg>Apagas luces, pero la factura no baja.</li>
+      <li class="pain-item"><svg class="ico" aria-hidden="true"><use href="#i-plug"/></svg>Nadie te explica qué pagas de verdad.</li>
+    </ul>
+    <p class="pain-close">No es que gastes mucho. Es que tienes la luz mal contratada.</p>
+  </div>
+</section>
+
+<section class="about">
+  <div class="in">
+    <div class="photo">
+      <!-- Foto do autor -->
+      <img src="assets/jose-juan.jpg" alt="José Juan, electricista" loading="lazy" onerror="this.remove()">
+    </div>
+    <div>
+      <div class="eyebrow d-only">QUIÉN SOY</div>
+      <h2>Soy José Juan, electricista e instalador fotovoltaico en Valencia</h2>
+      <p>Paso el día entre cuadros eléctricos, contadores y facturas. Y veo lo mismo en casi todas las casas: gente que paga de más sin saberlo.</p>
+      <p>En esta guía te cuento lo que miro yo cuando entro en una casa. Paso a paso.</p>
+    </div>
+  </div>
+</section>
+
+<section class="inside">
+  <div class="in">
+    <div class="inside-head">
+      <h2 class="h2">Lo que hay dentro</h2>
+      <p>8 capítulos. Cada uno termina con una tarea concreta.</p>
+    </div>
+    <ol class="chapters">
+      <li class="ch"><svg class="ico" aria-hidden="true"><use href="#i-euro"/></svg><span class="ch-num">01</span><span class="ch-title">Cómo leer tu factura, línea por línea</span></li>
+      <li class="ch"><svg class="ico" aria-hidden="true"><use href="#i-bolt"/></svg><span class="ch-num">02</span><span class="ch-title">Potencia contratada: ¿estás pagando de más?</span></li>
+      <li class="ch"><svg class="ico" aria-hidden="true"><use href="#i-plug"/></svg><span class="ch-num">03</span><span class="ch-title">PVPC o mercado libre: cuál te conviene</span></li>
+      <li class="ch"><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg><span class="ch-num">04</span><span class="ch-title">Punta, llano y valle: mueve tu consumo</span></li>
+      <li class="ch"><svg class="ico" aria-hidden="true"><use href="#i-bulb"/></svg><span class="ch-num">05</span><span class="ch-title">Los aparatos que más gastan en casa</span></li>
+      <li class="ch"><svg class="ico" aria-hidden="true"><use href="#i-home"/></svg><span class="ch-num">06</span><span class="ch-title">Bono social: comprueba si tienes derecho</span></li>
+      <li class="ch"><svg class="ico" aria-hidden="true"><use href="#i-swap"/></svg><span class="ch-num">07</span><span class="ch-title">Cambiar de compañía sin trampas</span></li>
+      <li class="ch ch--last"><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span class="ch-num">08</span><span class="ch-title">Plan de 30 días + checklist</span></li>
+    </ol>
+    <div class="inside-cta"><a class="btn btn--line" href="#oferta">Quiero bajar mi factura · 16,90&nbsp;€</a></div>
+  </div>
+</section>
+
+<section class="fit">
+  <div class="in">
+    <div class="fit-yes">
+      <h3 class="fit-title">PARA TI SI…</h3>
+      <ul class="fit-list">
+        <li>✓ Pagas mucho de luz y no sabes por qué.</li>
+        <li>✓ Vives de alquiler o en propiedad.</li>
+        <li>✓ Quieres entender tu factura de una vez.</li>
+        <li>✓ Prefieres pasos concretos a teoría.</li>
+      </ul>
+    </div>
+    <div class="fit-no">
+      <h3 class="fit-title">NO ES PARA TI SI…</h3>
+      <ul class="fit-list">
+        <li>✕ Buscas un truco mágico sin hacer nada.</li>
+        <li>✕ Ya revisas tu factura, potencia y tarifa cada año.</li>
+        <li>✕ Buscas una guía de placas solares.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="guar">
+  <div class="in">
+    <div class="seal" aria-hidden="true">
+      <div class="seal-in">
+        <div class="seal-l">GARANTÍA</div>
+        <div class="seal-n">7</div>
+        <div class="seal-l">DÍAS</div>
+      </div>
+    </div>
+    <div>
+      <p class="guar-head">Aplica los 8 pasos. <span class="hl">Si tu factura no baja, te devuelvo el dinero.</span></p>
+      <p class="guar-sub">Tienes 7 días para pedirlo, sin preguntas.</p>
+    </div>
+  </div>
+</section>
+
+<section class="offer" id="oferta">
+  <div class="in">
+    <div class="offer-box">
+      <div class="offer-price">
+        <div class="offer-eyebrow">BAJA TU FACTURA</div>
+        <div class="offer-amount">16,90 €</div>
+        <div class="offer-note">Pago único</div>
+      </div>
+      <ul class="offer-list">
+        <li><b>✓</b>Ebook en PDF con los 8 capítulos</li>
+        <li><b>✓</b>Acceso inmediato tras el pago</li>
+        <li><b>✓</b>Plan de 30 días y checklist imprimible</li>
+        <li><b>✓</b>Garantía de 7 días</li>
+      </ul>
+      <!-- LINK DE PAGAMENTO: troque o href abaixo pelo link do checkout -->
+      <a class="btn btn--line offer-cta" id="checkout" href="#">Quiero bajar mi factura · 16,90&nbsp;€</a>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="in">
+    <h2 class="h2">Preguntas frecuentes</h2>
+    <div class="faq-list">
+      <div class="faq-item open">
+        <button class="faq-q" type="button" aria-expanded="true" aria-controls="faq-a0"><span>¿Sirve si vivo de alquiler?</span><span class="faq-sign" aria-hidden="true"></span></button>
+        <p class="faq-a" id="faq-a0">Sí. Casi todo se hace con tu factura y tu contrato de luz, sin tocar la casa. Si el contrato está a nombre del casero, habla con él antes de cambiar potencia o compañía.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a1"><span>¿Necesito placas u obras?</span><span class="faq-sign" aria-hidden="true"></span></button>
+        <p class="faq-a" id="faq-a1">No. Nada de la guía necesita placas ni obras. Solo tu factura, el móvil y algún cambio de hábitos.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a2"><span>¿Cómo recibo la guía?</span><span class="faq-sign" aria-hidden="true"></span></button>
+        <p class="faq-a" id="faq-a2">Al pagar tienes acceso inmediato al ebook en PDF. Lo lees en el móvil, en el ordenador o lo imprimes.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a3"><span>¿Y si no me funciona?</span><span class="faq-sign" aria-hidden="true"></span></button>
+        <p class="faq-a" id="faq-a3">Aplica los 8 pasos. Si tu factura no baja, te devuelvo el dinero. Tienes 7 días para pedirlo, sin preguntas.</p>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-a4"><span>¿Vale para cualquier compañía?</span><span class="faq-sign" aria-hidden="true"></span></button>
+        <p class="faq-a" id="faq-a4">Sí. Todas las facturas de luz en España tienen las mismas partes. La guía te sirve con la compañía que tengas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="in">
+    <h2 class="h2">Deja de pagar lo que no usas</h2>
+    <a class="btn btn--dark" href="#oferta">Quiero bajar mi factura · 16,90&nbsp;€</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="in">
+    <div class="foot-brand">BAJA TU FACTURA</div>
+    <nav class="foot-links" aria-label="Legal">
+      <a href="#">Aviso legal</a>
+      <a href="#">Privacidad</a>
+      <a href="#">Cookies</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+// FAQ: abre uma pergunta por vez
+(function(){
+  var items = document.querySelectorAll('.faq-item');
+  items.forEach(function(item){
+    var btn = item.querySelector('.faq-q');
+    btn.addEventListener('click', function(){
+      var wasOpen = item.classList.contains('open');
+      items.forEach(function(i){
+        i.classList.remove('open');
+        i.querySelector('.faq-q').setAttribute('aria-expanded','false');
+      });
+      if(!wasOpen){
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded','true');
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>
